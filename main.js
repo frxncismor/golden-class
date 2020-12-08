@@ -8,7 +8,7 @@ function showMember(member) {
 			element.querySelector('.about-us__text--description').innerHTML =
 				'Moonyi es un artista urbano que le gusta el perreo intenso y sucio y le gusta mojar la brocha en lugares inadecuados, fan destacado de la wera del tec y del konan big';
 			img = element.querySelector('figure').querySelector('img');
-			img.src = './images/moonyi.jpg';
+			img.src = './images/efren.jpg';
 			img.classList.add('photo');
 			break;
 		case 2:
