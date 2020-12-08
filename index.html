@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<title>Golden Class</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="title">Golden Class</h1>
+				<ul class="header__menu">
+					<li class="header__menu--item"><a href="#aboutus">conocenos</a></li>
+					<li class="header__menu--item"><a href="#">contactanos</a></li>
+					<li class="header__menu--item"><a href="#">plataformas</a></li>
+				</ul>
+			</div>
+			<main class="main">
+				<!-- <h2 class="main__text">Desde <strong>Monterrey</strong></h2> -->
+				<h2 class="main__text animate__animated animate__fadeInLeft">La próxima <strong>pandemia</strong></h2>
+				<h2 class="main__text--us animate__animated animate__fadeInRight"><strong>seremos</strong> nosotros</h2>
+				<figure>
+					<video src="./images/demo-gc.mp4" contols autoplay></video>
+					<!-- <img class="main__logo" src="./images/logo.jpg" alt="logo golden class" /> -->
+					<!-- <img class="main__logo" src="./images/demo-gc.gif" alt="logo golden class" /> -->
+				</figure>
+			</main>
+			<div class="about-us" id="aboutus">
+				<h1 class="about-us__title">¿Quiénes somos?</h1>
+				<div class="about-us__text">
+					<figure>
+						<img src="./images/roby-pray.jpg" alt="robieggg foto" />
+					</figure>
+					<p class="about-us__text--description">
+						Golden class es un colaborativo musical nacido de la ciudad entre las montañas desde 2019
+					</p>
+				</div>
+				<div class="about__us--members">
+					<ul class="members__list">
+						<li><button onclick="showMember(1)">Moonyi</button></li>
+						<li><button onclick="showMember(2)">River G</button></li>
+						<li><button onclick="showMember(3)">Kinny G</button></li>
+						<li><button onclick="showMember(4)">Obsen G</button></li>
+						<li><button onclick="showMember(5)">Mario G</button></li>
+						<li><button onclick="showMember(6)">Robie G</button></li>
+						<li><button onclick="showMember(7)">Yeezy G</button></li>
+						<li><button onclick="showMember(8)">G Producer</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>

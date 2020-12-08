@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h1{
+    /* margin: auto; */
+}
+/* .container{
+    width: 90%;
+    background: black;
+    margin: 0 auto;
+} */
+
+.container .header{
+    color: #def44b;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    border-bottom: 1px solid #f0b;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+}
+
+.header .title{
+    width: 55%;
+    text-align: end;
+}
+
+.header .header__menu{
+    font-size: 10pt;
+    margin-left: 30%;
+    font-size: 10pt;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Staatliches', cursive;
+    justify-content: center;
+}
+
+.header .header__menu .header__menu--item{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
+
+.header .header__menu .header__menu--item a{
+    text-decoration: none;
+    color: white;
+}
+
+.header .header__menu .header__menu--item a:hover{
+    color: #def44b;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+}
+
+.main .main__text{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 65pt;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    z-index: 1;
+}
+
+.main .main__text strong{
+    color: #def44b;
+}
+
+.main figure{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 106vh;
+}
+
+.main figure video {
+    width: 45%;
+    height: 1225px;
+}
+
+.main .main__text--us{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 65pt;
+    position: absolute;
+    z-index: 1;
+    top: 760px;
+    right: 120px;
+}
+
+.main .main__text--us strong{
+    color: #def44b;
+}
+
+.about-us{
+    background-color: #def44b;
+    height: 100vh;
+    font-family: 'Staatliches', cursive; 
+}
+
+.about-us__title{
+    text-align: center;
+    padding-top: 35px;
+}
+
+.about-us__text{
+    display: flex;
+    margin: 65px 0;
+}
+
+.about-us__text figure{
+    width: 56%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us__text figure img{
+    width: 100%;
+    max-width: 65%;
+    margin-bottom: 15px;
+    height: 565px;
+    object-fit: cover;
+}
+
+.about-us__text--description{
+    font-size: 38pt;
+    width: 44%;
+    margin-right: 35px;
+
+}
+
+.members__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+}
+
+.members__list li{
+    list-style: none;
+}
+
+.members__list li button{
+    border: none;
+    background-color: transparent;
+    font-family: 'Staatliches', cursive; 
+    font-size: 27pt;
+    outline: none;
+    color: white;
+}
+
+.members__list li button:hover{
+    color: #f0b;
+    text-decoration: underline;
+}
+
+.photo{
+    max-width: 65%;
+    margin-bottom: 15px;
+    height: 565px;
+    object-fit: cover;
+}
