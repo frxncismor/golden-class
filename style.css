@@ -175,6 +175,12 @@ h1{
     text-decoration: underline;
 }
 
+.members__list li button:focus{
+    color: #f0b;
+    text-decoration: underline;
+}
+
+
 .photo{
     max-width: 65%;
     margin-bottom: 15px;
