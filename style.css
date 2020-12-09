@@ -134,6 +134,10 @@ h1{
     justify-content: center;
 }
 
+#text{
+    font-size: 30pt
+}
+
 .about-us__text figure img{
     width: 100%;
     max-width: 65%;
@@ -146,7 +150,31 @@ h1{
     font-size: 38pt;
     width: 44%;
     margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.about-us__platforms{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.about-us__platforms div h1{
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 300;
+}
+
+.music__logos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.music__logos img{
+    width: 70px;
+    height: 70px;
 }
 
 .members__list{
@@ -204,7 +232,7 @@ h1{
     text-align: center;
     margin: auto 0;
     z-index: 2;
-    color: #f0b;
+    color: white;
 }
 .contact__card2{
     grid-row: 1 / span 4;
@@ -233,7 +261,7 @@ h1{
 }
 
 .platforms{
-    background-color: #f0b;
+    background-color: #393e46;
     height: 50vh;
     font-family: 'Staatliches', cursive; 
 }
@@ -241,4 +269,5 @@ h1{
 .platforms__title{
     text-align: center;
     padding-top: 35px;
+    color: #def44b;
 }
