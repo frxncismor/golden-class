@@ -219,9 +219,10 @@ h1{
 
 .contact{
     height: 50vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:  1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    overflow: hidden;
 }
 
 .contact__card1{
@@ -247,7 +248,7 @@ h1{
 }
 
 .contact__card3{
-    grid-row: 2 / span 2;
+    grid-row: 1 / span 4;
     grid-column: 4 / span 2;
     z-index: 3;
     background-color: white;
@@ -256,18 +257,111 @@ h1{
     align-items: center;
 }
 
-.contact__card3 h2{
+.contact__card3 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65%;
+    width: 65%;
+}
+
+.contact__card3 label{
     font-family: 'Staatliches', cursive;
+    font-size: 20pt;
+}
+
+.contact__card3 input{
+    height: 25px;
+    border: 1px solid;
+    margin-bottom: 15px;
+    font-weight: 100;
+    padding: 10px;
+    font-family: 'Staatliches', cursive;
+}
+
+.contact__card3 textarea{
+    margin-bottom: 15px;
+    border: 1px solid;
+    height: 130px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.contact__card3 #submit{
+    background-color: #def44b;
+    color: black;
+    font-family: 'Staatliches', cursive;
+    font-size: 20pt;
+    border: none;
+    height: 50px;
+
+}
+
+.contact__card3 #submit:hover{
+    background: black;
+    color: pink;
+}
+
+.contact__card3 a{
+    font-family: 'Staatliches', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 30pt;
+}
+
+.contact__card3 a:hover{
+    color: #def44b;
 }
 
 .platforms{
     background-color: #393e46;
     height: 50vh;
-    font-family: 'Staatliches', cursive; 
+    font-family: 'Staatliches', cursive;
+    display: grid;
+    margin: 0 0 0 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .platforms__title{
     text-align: center;
-    padding-top: 35px;
     color: #def44b;
+    font-size: 90pt;
+    margin: 16px 0 0 0;
+    grid-column: 2 / span 3;
+}
+
+.platforms__title--facebook{
+    color: white;
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    font-size: 30pt;
+    text-align: center;
+}
+
+
+.platforms__title--instagram{
+    color: white;
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.platforms__title--youtube{
+    color: white;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.platforms__title--facebook:hover, .platforms__title--instagram:hover, .platforms__title--youtube:hover{
+    color: #f0b;
+}
+
+.platforms__title--instagram, .platforms__title--facebook, .platforms__title--youtube{
+    text-decoration: none;
+    cursor: pointer;
 }

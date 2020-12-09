@@ -75,11 +75,23 @@
 					<img src="./images/luis.jpg" alt="" />
 				</div>
 				<div class="contact__card3">
-					<h2>golden@class.com</h2>
+					<form action="">
+						<label for="subject">Asunto</label>
+						<input type="text" id="subject" />
+						<label for="body">Cuerpo</label>
+						<textarea type="text" id="body"></textarea>
+						<input id="submit" type="submit" onclick="sendMail()" />
+					</form>
+					<!-- <a href="mailto:goldenclass73@gmail.com">goldenclass73@gmail.com</a> -->
 				</div>
 			</div>
 			<div class="platforms">
 				<h1 class="platforms__title">Plataformas</h1>
+				<a class="platforms__title--instagram" target="_blank" href="https://www.instagram.com/goldenclass73/">Instagram</a>
+				<a class="platforms__title--facebook" target="_blank" href="https://www.facebook.com/goldenclassentertainment">Facebook</a>
+				<a class="platforms__title--youtube" target="_blank" href="https://www.youtube.com/channel/UCAV3sRp4TNIzudvM62GOsBg"
+					>Youtube</a
+				>
 			</div>
 		</div>
 		<script src="./main.js"></script>

@@ -74,3 +74,10 @@ function showMember(member) {
 			break;
 	}
 }
+
+function sendMail() {
+	var subject = document.querySelector('#subject').value;
+	var body = document.querySelector('#body').value;
+	console.log({subject, body});
+	window.location.href = 'mailto:goldenclass73@gmail.com?subject=' + subject + '&body=' + body;
+}
